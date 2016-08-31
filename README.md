@@ -39,4 +39,8 @@ Inside, the text is added (and a couple of images), manually positioned with blo
 
 ## `arapv.tex`
 
-`arapv.tex` is the actual PDF of the book (including front and back covers). It uses `\includepdf` with `arapvcover.pdf` twice, to include the relevant part of the cover as the first and last pages.
+`arapv.tex` is the actual PDF of the book (including front and back covers).
+
+It uses `\includepdf` with `arapvcover.pdf` twice, to include the relevant area of the cover as the first and last pages.
+
+In between, it includes these TeX files: `sampadakiyam`, `paricayah`, `biography`, `virudavali`, `prasamsa`, `alokanam`, `abharapradarsanam`, `mangalacaranam`, `prastavana`, `adhyaya1`, `adhyaya2`, `adhyaya3`, `bibliography`.

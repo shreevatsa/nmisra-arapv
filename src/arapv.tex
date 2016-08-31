@@ -213,6 +213,8 @@
 \setcounter{footnote}{0}
 \include{included-main/prastavana}
 
+% Redefines \pagenumbering to remove the part which resets numbering to 1
+% TODO: Verify how removing this block affects the page numbering.
 \makeatletter
 \def\pagenumbering#1{
   \gdef\thepage{\csname @#1\endcsname \c@page}}
