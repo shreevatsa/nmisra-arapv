@@ -16,7 +16,7 @@
 \documentclass[twoside]{book}
 \usepackage[margin=2cm,paperwidth=180mm,paperheight=270mm]{geometry}
 \usepackage{nameref}
-\usepackage{titlesec} 
+\usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{ulem}
 \usepackage{calc}
@@ -132,7 +132,7 @@
 {\fontsize{16}{24} \selectfont \textcolor{BrickRed}{(तुर्याश्रमे \textcolor{blue}{जगद्गुरुरामानन्दाचार्यस्वामिरामभद्राचार्याः} इति ख्याताः)}}\\[7pt]
 \vfill
 {\fontsize{14}{21} \selectfont \textcolor{BrickRed}{स च विमर्शो गौतमान्वयेन पिपरागौतमग्राममूलकेन पण्डितगायत्रीभूषणमिश्रसूनुना}}\\[5pt]
-{\fontsize{18}{24} \selectfont \textcolor{blue}{नित्यानन्दमिश्रेण}}\\[5pt] 
+{\fontsize{18}{24} \selectfont \textcolor{blue}{नित्यानन्दमिश्रेण}}\\[5pt]
 {\fontsize{14}{21} \selectfont \textcolor{BrickRed}{यथामति सम्पादित उद्धरणमूलग्रन्थनामश्लोकसङ्ख्याटिप्पणीप्रक्रियाभिः संवर्धितश्च}}
 \end{center}
 \pagebreak
@@ -194,24 +194,24 @@
 \renewcommand{\thedummy}{\devanagarinumeral{dummy}}
 \pagestyle{fancy}
 
-\include{sampadakiyam}
+\include{included-main/sampadakiyam}
 
-\include{paricayah}
+\include{included-main/paricayah}
 
-\include{biography}
+\include{included-main/biography}
 
-\include{virudavali}
+\include{included-main/virudavali}
 
-\include{prasamsa}
+\include{included-main/prasamsa}
 
-\include{alokanam}
+\include{included-main/alokanam}
 
-\include{abharapradarsanam}
+\include{included-main/abharapradarsanam}
 
-\include{mangalacaranam}
+\include{included-main/mangalacaranam}
 
 \setcounter{footnote}{0}
-\include{prastavana}
+\include{included-main/prastavana}
 
 \makeatletter
 \def\pagenumbering#1{
@@ -222,14 +222,14 @@
 \renewcommand{\thepage}{\large \devanagarinumeral{page}}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
-\include{adhyaya1}
+\include{included-main/adhyaya1}
 
-\include{adhyaya2}
+\include{included-main/adhyaya2}
 
-\include{adhyaya3}
+\include{included-main/adhyaya3}
 
 \backmatter
-\include{bibliography}
+\include{included-main/bibliography}
 
 \strictpagecheck
 \checkoddpage
