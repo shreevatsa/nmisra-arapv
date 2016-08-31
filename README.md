@@ -1,10 +1,19 @@
 # nmisra-arapv
-These are the LaTeX (XeLaTeX) source files (also available at https://sites.google.com/site/nmisra/ARAPV.zip) for the Sanskrit book _Adhyātmarāmāyaṇe’pāṇinīyaprayogāṇāṃ Vimarśaḥ_.
 
-They are distributed by the copyright holder (Nityanand Misra) under the terms of the GNU General Public License (version 3 or later).
+In this branch, I write down my notes from examining the files.
 
-The book is a work by Ācārya Giridharalāla Miśra Prajñācakṣu, known later as Jagadguru Rāmānandācārya Svāmī Rāmabhadrācārya, edited with notes by Nityānanda Miśra. It is available [on academia.edu](https://www.academia.edu/25018408/Adhy%C4%81tmar%C4%81m%C4%81ya%E1%B9%87e_Ap%C4%81%E1%B9%87in%C4%AByaprayog%C4%81%E1%B9%87%C4%81%E1%B9%83_Vimar%C5%9Ba%E1%B8%A5) and [an online version here](http://jagadgururambhadracharya.org/works/arapv/).
+Setup / compilation
+-----------------
+1. Make sure XeTeX is installed (`type xelatex`)
+2. Install Sanskrit2003NM font (included here)
+3. Install Charis SIL font (download from http://software.sil.org/charis/)
+4. Run `xelatex arapvcover.tex`
+5. Run `xelatex arapv.tex` 2 or 3 times. (If you run it only once, the page numbers and cross-references will be incorrect or missing.)
 
-See [this post](https://groups.google.com/d/msg/bvparishat/912ZbFtk7ys/AsGaGz05BQAJ) for the announcement about releasing these files.
+Structure
+--------
+There are two "main" files: `arapvcover.tex` and `arapv.tex`
 
-See [steps.txt](steps.txt) for instructions on how to compile the file.
+`arapvcover.tex` contains the back cover, spine, and front cover as a single sheet, which can be used for binding a printed book. It is small (64 lines excluding comments and blank lines) and relatively self-contained.
+
+`arapv.tex` is the actual PDF of the book (including front and back covers). It uses `\includepdf` with `arapvcover.pdf` twice, to include the relevant part of the cover as the first and last pages.
