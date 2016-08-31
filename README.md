@@ -1,5 +1,7 @@
 # nmisra-arapv
-These are the LaTeX source files (also available at https://sites.google.com/site/nmisra/ARAPV.zip) for the Sanskrit book “Adhyātmarāmāyaṇe’pāṇinīyaprayogāṇāṃ Vimarśaḥ”.
+These are the LaTeX (XeLaTeX) source files (also available at https://sites.google.com/site/nmisra/ARAPV.zip) for the Sanskrit book _Adhyātmarāmāyaṇe’pāṇinīyaprayogāṇāṃ Vimarśaḥ_.
+
+They are distributed by the copyright holder (Nityanand Misra) under the terms of the GNU General Public License (version 3 or later).
 
 The book is a work by Ācārya Giridharalāla Miśra Prajñācakṣu, known later as Jagadguru Rāmānandācārya Svāmī Rāmabhadrācārya, edited with notes by Nityānanda Miśra. It is available [on academia.edu](https://www.academia.edu/25018408/Adhy%C4%81tmar%C4%81m%C4%81ya%E1%B9%87e_Ap%C4%81%E1%B9%87in%C4%AByaprayog%C4%81%E1%B9%87%C4%81%E1%B9%83_Vimar%C5%9Ba%E1%B8%A5).
 
