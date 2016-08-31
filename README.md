@@ -17,18 +17,25 @@ There are two "main" files: `arapvcover.tex` and `arapv.tex`
 ### `arapvcover.tex`
 `arapvcover.tex` contains the back cover, spine, and front cover as a single sheet, which can be used for binding a printed book. It is small (64 lines excluding comments and blank lines) and relatively self-contained.
 
+It is mostly based on the PSTricks package; in fact the document is almost fully a pspicture:
 ```
+...
+\begin{document}
 \pagecolor{Maroon}
 \pagestyle{empty}
 \psset{unit=1in}
 \begin{pspicture}(384mm,270mm)
+...
+\end{pspicture}
+\end{document}
 ```
 
-and then inside adds text, manually positioned with blocks like
+Inside, the text is added (and a couple of images), manually positioned with blocks like
 
 ```
 \rput[lb](20mm,155mm){\parbox{14cm}{\fontsize{13}{18}\selectfont\color{white}{\engtextfont Originally authored...}}}
 ```
+
 ^ That means to put text such that its bottom-left (`lb`) is at coordinates `(x, y) = (20 mm, 155 mm)`.
 
 
