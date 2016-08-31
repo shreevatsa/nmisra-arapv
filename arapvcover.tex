@@ -20,7 +20,8 @@
 \usepackage{graphicx}
 \usepackage{rotating}
 \usepackage{color}
-\usepackage[ISBN=978-81-92385-64-8]{ean13isbn}
+% % Package for typesetting ISBN; does not seem to be actually used.
+% \usepackage[ISBN=978-81-92385-64-8]{ean13isbn}
 \usepackage{polyglossia}
 \setmainlanguage{hindi}
 \setotherlanguage{english}
@@ -64,8 +65,12 @@
 \end{turn}
 }
 
+% See http://www.personal.ceu.hu/tex/spacebox.htm#newsavebox onwards.
+% Declares a new command \logobox as a bin for saving boxes
 \newsavebox\logobox
+% Saves the image into the above bin \logobox
 \sbox\logobox{\includegraphics[width=.75in]{included-cover/stpsn.jpg}}
+% Actually puts the contents of this box, where we want it.
 \rput[lb](181.75mm,15mm){\usebox\logobox}
 
 \rput[lb](20mm,155mm){\parbox{14cm}{\fontsize{13}{18}\selectfont\color{white}{\engtextfont Originally authored in 1981, this book is the PhD dissertation of the polyglot and polymath Hindū saint Jagadguru Rāmānandācārya Svāmī Rāmabhadrācārya (then known as Ācārya Giridharalāla Miśra Prajñācakṣu). Svāmī Rāmabhadrācārya is the founder of Tulsi Peeth, a social and religious organization at Chitrakoot, and the founder and lifelong chancellor of a university for the differently abled at Chitrakoot. Without eyesight since the age of two months and without formal education till the age of 17 years, Svāmī Rāmabhadrācārya speaks 22 languages and has authored more than 100 books in Sanskrit and Hindi. In this work, Svāmī Rāmabhadrācārya has examined ‘non-Pāṇinian’ usages in the \textit{Adhyātma Rāmāyaṇa} using traditional and novel methods drawing from the Pāṇinian framework. This edition of the book is edited and annotated by Nityānanda Miśra, a Sanskrit enthusiast who works in the investment banking industry at Mumbai. He is an initiated disciple of Svāmī Rāmabhadrācārya.}}}
