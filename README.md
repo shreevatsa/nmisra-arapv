@@ -8,3 +8,5 @@ The book is a work by Ācārya Giridharalāla Miśra Prajñācakṣu, know
 See [this post](https://groups.google.com/d/msg/bvparishat/912ZbFtk7ys/AsGaGz05BQAJ) for the announcement about releasing these files.
 
 See [steps.txt](steps.txt) for instructions on how to compile the file.
+
+See the ["notes" branch of this repo](https://github.com/shreevatsa/nmisra-arapv/tree/notes) for my (personal, possibly idiosyncratic) reorganization and comments/notes about these TeX sources.
